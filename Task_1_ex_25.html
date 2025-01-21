@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 25</title>
+</head>
+<body>
+    <script>
+        //'var' is function-scoped and variables declared with 'var' is used within a function. we can also redeclare variables withing a scope using 'var'.
+        function message(){
+            var greet = "hello."
+        }
+
+        //'let' is block-level scoped and variables declared with let can only be used within a set of curly braces '{}'. we cannot redeclare 'let' within the same scope.
+        function block(){
+            let x = 5;
+            console.log(x);
+        }
+    </script>
+</body>
+</html>
