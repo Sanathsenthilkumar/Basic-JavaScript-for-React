@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 44</title>
+</head>
+<body>
+    <script>
+        let a = 1;
+        let b = 2;
+        let res1 = a && b; // b will not be evaluated here.
+        console.log(res1);
+
+        let c = 3;
+        let d = 4;
+        let res2 = c || d; // d will not be evaluated here
+        console.log(res2);
+
+        //we can use it this way
+        let userDefinedValue = null;
+        let defaultValue = 'Default';
+        let valueToUse = userDefinedValue || defaultValue;
+        console.log(valueToUse); 
+
+    </script>
+</body>
+</html>

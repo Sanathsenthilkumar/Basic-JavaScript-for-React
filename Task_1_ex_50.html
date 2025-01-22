@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 50</title>
+</head>
+<body>
+    <script>
+        function greet(name = 'stranger', greeting = 'Hello') {
+            console.log(`${greeting}, ${name}!`);
+        }
+
+        // Calling the function with different arguments
+        greet(); // Default values used: 'Hello, stranger!'
+        greet('Alice');// different value for name parameter
+        greet('Bob', 'Hi');//different values for both parameters
+
+    </script>
+</body>
+</html>
