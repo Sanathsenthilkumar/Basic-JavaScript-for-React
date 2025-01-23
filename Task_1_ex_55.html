@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 55</title>
+</head>
+<body>
+    <script>
+        const Object = {
+            val: 10,
+
+            TraditionalFunction: function() {
+                return this.val;
+            },
+            //In Traditional functions "this" refers to the object itself so its value here is 10 (val: 10)
+
+            ArrowFunction: () => {
+                return this.val;
+            }
+            /*In Arrow functions "this" does not refer to the object but the surrounding in which the arrow function was defined. 
+            Here the value is not defined in the local scope so the value will be "undefined". If the function was defined in global 
+            scope then this will refer to global object(In browsers, "this" is the window, so if "window.value" is set that will be the 
+            value of the arrow function)*/
+            
+        }
+        console.log(Object.TraditionalFunction());
+        console.log(Object.ArrowFunction());
+    </script>
+</body>
+</html>
